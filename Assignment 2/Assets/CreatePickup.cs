@@ -76,6 +76,10 @@ public class CreatePickup : MonoBehaviour
             {
                 counter += 4;
             }
+            else if (other.gameObject.GetComponent<Renderer>().material.color == Color.yellow)
+            {
+                counter += 2;
+            }
         }
 
     }
